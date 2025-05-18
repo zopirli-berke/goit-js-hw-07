@@ -16,7 +16,14 @@ const images = [
 const gallery = document.querySelector(`.gallery`);
 
 const markup = images
-  .map(({ url, alt }) => `<li><img src="${url} alt="${alt}" width="360"/></li>`)
+  .map(
+    ({ url, alt }) =>
+      `<li><img src="${url}" alt="${alt}" width="360" height="300"/></li>`
+  )
   .join("");
 
 gallery.insertAdjacentHTML(`afterbegin`, markup);
+
+// Gallery style class add
+
+gallery.classList.add(`gallery-style`);

@@ -1,4 +1,7 @@
 const loginForm = document.querySelector(`.login-form`);
+const label = document.querySelectorAll(`label`);
+const input = document.querySelectorAll(`input`);
+const btn = document.querySelector(`button`);
 
 loginForm.addEventListener(`submit`, handleSubmit);
 
@@ -18,3 +21,17 @@ function handleSubmit(event) {
   console.log(loginFormData);
   loginForm.reset();
 }
+
+// Style class add
+
+loginForm.classList.add(`login-form-style`);
+
+label.forEach((item) => {
+  item.classList.add(`label`);
+});
+
+input.forEach((item) => {
+  item.classList.add(`input`);
+});
+
+btn.classList.add(`button`);

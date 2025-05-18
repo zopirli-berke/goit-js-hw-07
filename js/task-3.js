@@ -6,3 +6,7 @@ nameInput.addEventListener(`input`, () => {
 
   nameOutput.textContent = nameInputValue === `` ? `Anonymous` : nameInputValue;
 });
+
+// Input style class add
+
+nameInput.classList.add(`input`);
